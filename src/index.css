@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "para";
+    src: url('./assets/482a8097102f5f9f-s.p.woff2');
+}
+
+@font-face {
+    font-family: "title";
+    src: url('./assets/54252e86b97de34f-s.p.woff2');
+}
+
+body{
+    font-family: "para";
+    background-color: #EFEFEF;
+}
+
+h1{
+    font-family: "title";
+}
+
+
+/* From Uiverse.io by JulanDeAlb */ 
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+/* Gradient backgrounds */
+.bg1 { background: linear-gradient(135deg, #ff6b6b, #f06595); }
+.bg2 { background: linear-gradient(135deg, #845ef7, #5c7cfa); }
+.bg3 { background: linear-gradient(135deg, #339af0, #22b8cf); }
+.bg4 { background: linear-gradient(135deg, #51cf66, #94d82d); }
+.bg5 { background: linear-gradient(135deg, #fcc419, #ff922b); }
+.bg6 { background: linear-gradient(135deg, #e64980, #be4bdb); }
+.bg7 { background: linear-gradient(135deg, #4dabf7, #15aabf); }
+.bg8 { background: linear-gradient(135deg, #40c057, #74b816); }
+
+/* Smooth scrolling wrapper fix */
+#smooth-wrapper {
+  overflow: hidden;
+}
+
