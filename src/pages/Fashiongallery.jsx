@@ -587,7 +587,7 @@ export default function FashionGallery() {
       {!loaded && <Preloader onComplete={handlePreloaderDone} />}
 
       {/* Header */}
-      <div ref={headerRef} className="fixed top-0 left-0 w-screen px-6 py-6 z-[10000] grid grid-cols-12 gap-4 opacity-0 pointer-events-none">
+      {/* <div ref={headerRef} className="fixed top-0 left-0 w-screen px-6 py-6 z-[10000] grid grid-cols-12 gap-4 opacity-0 pointer-events-none">
         <div className="[grid-column:1/span_3] pointer-events-auto">
           <Logo />
         </div>
@@ -612,7 +612,7 @@ export default function FashionGallery() {
             {[["Instagram","https://instagram.com/filipz__"],["Twitter","https://x.com/filipz"],["LinkedIn","https://linkedin.com/in/filipzrnzevic"]].map(([l,h]) => <li key={l}><a href={h} className="nav-link">{l}</a></li>)}
           </ul>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Viewport */}
       <div ref={viewportRef} id="viewport" className="fixed top-0 left-0 w-screen h-screen overflow-hidden z-[1] opacity-0">
@@ -684,12 +684,12 @@ export default function FashionGallery() {
       </div>
 
       {/* Footer */}
-      <div ref={footerRef} className="fixed bottom-0 left-0 w-screen px-6 py-6 z-[10000] grid grid-cols-12 gap-4 opacity-0 pointer-events-none">
+      {/* <div ref={footerRef} className="fixed bottom-0 left-0 w-screen px-6 py-6 z-[10000] grid grid-cols-12 gap-4 opacity-0 pointer-events-none">
         <div className="[grid-column:9/span_4] text-right pointer-events-auto">
           <p className="text-sm font-semibold text-white" style={{ fontFamily:"TheGoodMonolith,monospace" }}>Est. 2025 • Summer Days</p>
           <p className="text-sm font-semibold text-white" style={{ fontFamily:"TheGoodMonolith,monospace" }}>34.0522° N, 118.2437° W</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Vignette */}
       <div className="fixed inset-0 pointer-events-none z-[9998]">

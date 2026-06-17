@@ -42,6 +42,10 @@ import Webglslider from './pages/Webglslider'
 import Dharunportfolio from './pages/Dharunportfolio'
 import Kpversemenu from './pages/Kpversemenu'
 import ThreeSlider from './pages/Threedslider'
+import Scrollrevealportfolio from './pages/Scrollrevealportfolio'
+import GalleryShowcase from './pages/Galleryshowcase'
+import Producthero from './pages/Producthero'
+import Elasticsectiondivider from './pages/Elasticsectiondivider'
 
 const App = () => {
 
@@ -79,10 +83,8 @@ const App = () => {
             <Route path='/culture' element={<Culture />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/infiniteportraitgallery' element={<Infiniteportraitgallery />} />
-            <Route path='/collection-surfer' element={<CollectionSurfer />} />
-          
-            <Route path='/pixel' element={<PixelCanvas />} />
-          
+            <Route path='/collection-surfer' element={<CollectionSurfer />} />     
+            <Route path='/pixel' element={<PixelCanvas />} />          
             <Route path='/cursorparticletypography' element={<CursorParticleTypography />} />
               <Route path='/mugsymugs' element={<MugsyMugs />} />
                <Route path='/parallaxhero' element={<ParallaxHero />} />
@@ -104,10 +106,13 @@ const App = () => {
              <Route path="/dharunportfolio" element={<Dharunportfolio />} />  
              <Route path="/kpversemenu" element={<Kpversemenu />} />  
              <Route path="/threeslider" element={<ThreeSlider />} />  
+             <Route path="/scrollrevealportfolio" element={<Scrollrevealportfolio />} />  
+             <Route path="/galleryshowcase" element={<GalleryShowcase />} />  
+              <Route path="/producthero" element={<Producthero />} />
+              <Route path="/elasticsectiondivider" element={<Elasticsectiondivider />} />
 
         </Routes>
       </BrowserRouter>
-    
     </div>
   )
 }
